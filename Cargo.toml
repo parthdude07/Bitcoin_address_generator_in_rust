@@ -1,0 +1,20 @@
+[package]
+name = "bitcoin_add_gen"
+version = "0.1.0"
+edition = "2024"
+
+
+[dependencies]
+# For Elliptic Curve Math (secp256k1)
+k256 = { version = "0.13", features = ["arithmetic"] } 
+
+# For Hashing
+sha2 = "0.10"
+ripemd = "0.1"
+
+# For Encoding/Display
+hex = "0.4"
+bs58 = "0.5" # Standard Base58 encoding library
+
+# For Randomness
+rand_core = { version = "0.6", features = ["std"] }
